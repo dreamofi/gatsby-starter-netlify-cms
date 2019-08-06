@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {graphql} from 'gatsby';
+import Layout from '../components/Layout';
+import Features from '../components/Features';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 export const ProductPageTemplate = ({
   image,
@@ -25,8 +25,10 @@ export const ProductPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-      }}
-    >
+      }}>
+      {/* The double !! is to check if the value is truthy
+           The childImageSharp is a node, which can be queried in graphql,
+           Read more at 'https://www.gatsbyjs.org/docs/working-with-images/'*/}
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
@@ -34,8 +36,7 @@ export const ProductPageTemplate = ({
           backgroundColor: '#f40',
           color: 'white',
           padding: '1rem',
-        }}
-      >
+        }}>
         {title}
       </h2>
     </div>
@@ -102,7 +103,7 @@ export const ProductPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -126,10 +127,10 @@ ProductPageTemplate.propTypes = {
     description: PropTypes.string,
     plans: PropTypes.array,
   }),
-}
+};
 
-const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+const ProductPage = ({data}) => {
+  const {frontmatter} = data.markdownRemark;
 
   return (
     <Layout>
@@ -145,8 +146,8 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  )
-}
+  );
+};
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
@@ -154,13 +155,13 @@ ProductPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default ProductPage
+export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       frontmatter {
         title
         image {
@@ -244,4 +245,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-`
+`;
