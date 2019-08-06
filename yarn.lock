@@ -11781,6 +11781,13 @@ react-datetime@^2.16.3:
     prop-types "^15.5.7"
     react-onclickoutside "^6.5.0"
 
+react-day-picker@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-7.3.1.tgz#949b752af6c4219c3d741dacfc3ce10dc6e2d26f"
+  integrity sha512-51GkSD0LW3uHBWCcwENMxJmniG+1jPQDtADpOu21+KYOvNHLFjlW+LdB/b/35SGJKEE502SyYqueutr4PD0czQ==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
