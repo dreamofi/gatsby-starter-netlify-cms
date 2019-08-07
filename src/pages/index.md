@@ -68,6 +68,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-# Testing
-
-![Test](/img/chemex.jpg "Test1")

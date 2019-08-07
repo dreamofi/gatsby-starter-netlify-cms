@@ -6,7 +6,12 @@ import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
 import GForm from '../components/gform';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import 'tachyons';
+
+{
+  /*CREATE TEMPLATE FOR INDEX PAGE*/
+}
 
 export const IndexPageTemplate = ({
   image,
@@ -16,8 +21,11 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  main,
 }) => (
   <div>
+    {/* THIS IS THE IMAGE FOR HEADER */}
+
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -27,6 +35,10 @@ export const IndexPageTemplate = ({
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}>
+      {/* 
+          THIS IS CONTAINER FOR TITLE AND SUBHEADING 
+      */}
+
       <div
         style={{
           display: 'flex',
@@ -62,6 +74,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -72,19 +85,24 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
+
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
+
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
+
                     <p>{description}</p>
                   </div>
                 </div>
+
                 <Features gridItems={intro.blurbs} />
+
                 <div className="columns">
                   <div className="column is-12 tc">
                     <Link className="btn" to="/products">
@@ -92,17 +110,54 @@ export const IndexPageTemplate = ({
                     </Link>
                   </div>
                 </div>
+
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
+
                   <BlogRoll />
+
                   <div className="column is-12 tc">
                     <Link className="btn" to="/blog">
                       Read more
                     </Link>
                   </div>
                 </div>
+
+                <div className="columns">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-3">
+                      {main.heading}
+                    </h3>
+
+                    <p>{main.description}</p>
+                  </div>
+                </div>
+
+                <div className="tile is-ancestor">
+                  <div className="tile is-vertical">
+                    <div className="tile">
+                      <div className="tile is-parent is-vertical">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image1} />
+                        </article>
+                      </div>
+
+                      <div className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image2} />
+                        </article>
+                      </div>
+                    </div>
+                    <div className="tile is-parent">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image3} />
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
                 <GForm />
               </div>
             </div>
@@ -122,6 +177,15 @@ IndexPageTemplate.propTypes = {
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+    content: PropTypes.string,
+    contentComponent: PropTypes.func,
+  }),
+  main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 };
 
@@ -138,6 +202,7 @@ const IndexPage = ({data}) => {
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   );
@@ -185,6 +250,40 @@ export const pageQuery = graphql`
           }
           heading
           description
+        }
+        main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }
