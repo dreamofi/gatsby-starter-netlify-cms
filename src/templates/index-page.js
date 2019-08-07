@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, graphql} from 'gatsby';
-
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
@@ -24,8 +23,6 @@ export const IndexPageTemplate = ({
   main,
 }) => (
   <div>
-    {/* THIS IS THE IMAGE FOR HEADER */}
-
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -35,10 +32,6 @@ export const IndexPageTemplate = ({
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
       }}>
-      {/* 
-          THIS IS CONTAINER FOR TITLE AND SUBHEADING 
-      */}
-
       <div
         style={{
           display: 'flex',
