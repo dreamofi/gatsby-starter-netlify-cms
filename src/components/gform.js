@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'tachyons';
 import MyForm from '../components/datepicker.js';
 
 const GForm = () => {
+  const [displayToggle, toggleState] = useState('show');
   return (
     <div id="myForm">
       <h3 className="has-text-weight-semibold is-size-2 is-block">
         Đặt lịch hẹn
       </h3>
-      <div class="columns is-desktop row-reverse">
+      <div className="columns is-desktop row-reverse">
         <div className="column is-desktop">
           <h4>Chúng tôi luôn đảm bảo mọi dịch vụ</h4>
           <p>Đừng ngần ngại liên hệ với chúng tôi</p>
@@ -20,7 +21,7 @@ const GForm = () => {
           target="_blank">
           <fieldset className="control">
             <div className="field">
-              <label className="label" for="name">
+              <label className="label" htmlFor="name">
                 Họ tên*
               </label>
               <div className="control">
@@ -36,7 +37,7 @@ const GForm = () => {
             </div>
 
             <div className="field">
-              <label className="label" for="email">
+              <label className="label" htmlFor="email">
                 Email*
               </label>
               <div className="control">
@@ -50,7 +51,7 @@ const GForm = () => {
               </div>
             </div>
             <div className="field">
-              <label className="label" for="phone">
+              <label className="label" htmlFor="phone">
                 Điện thoại*
               </label>
               <div className="control">
@@ -60,12 +61,12 @@ const GForm = () => {
                   type="text"
                   placeholder="Xin nhập số điện thoại"
                   name="entry.1166974658"
-                  requỉred
+                  required
                 />
               </div>
             </div>
             <div className="field">
-              <label className="label" for="address">
+              <label className="label" htmlFor="address">
                 Địa chỉ
               </label>
               <div className="control">
@@ -83,17 +84,26 @@ const GForm = () => {
               <label className="label">Nội dung liên hệ</label>
               <div className="control">
                 <div className="select is-block">
-                  <select id="contactChoice" name="entry.316572342">
-                    <option value="Đặt lịch đánh giá" selected="selected">
+                  <select
+                    id="contactChoice"
+                    name="entry.316572342"
+                    defaultValue="Đặt lịch đánh giá">
+                    <option
+                      value="Đặt lịch đánh giá"
+                      onClick={() => toggleState('show')}>
                       Đặt lịch đánh giá
                     </option>
-                    <option value="Nội dung khác">Nội dung khác</option>
+                    <option
+                      value="Nội dung khác"
+                      onClick={() => toggleState('hide')}>
+                      Nội dung khác
+                    </option>
                   </select>
                 </div>
               </div>
             </div>
 
-            <div className="field">
+            <div className={`field ${displayToggle}`}>
               <label className="label is-block is-expanded">
                 Chọn ngày hẹn
               </label>
@@ -113,7 +123,9 @@ const GForm = () => {
               </div>
             </div>
 
-            <button type="submit" className="button is-medium is-fullwidth">
+            <button
+              type="submit"
+              className="button is-medium is-fullwidth is-success">
               GỬI
             </button>
           </fieldset>

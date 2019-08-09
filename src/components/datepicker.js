@@ -27,8 +27,8 @@ export default class MyForm extends React.Component {
           inputProps={{
             name: 'entry.1752557180',
             type: 'text',
-            placeholder: 'xin nhập ngày hẹn',
-            class: 'input',
+            placeholder: 'Xin nhập ngày hẹn',
+            className: 'input',
           }}
         />
       </div>
