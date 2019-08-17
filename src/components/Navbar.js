@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
+import logoAkariHorizontal from '../img/logoAkariHorizontal.svg';
 import 'tachyons';
 
 const Navbar = class extends React.Component {
@@ -39,7 +39,11 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="AKARI" style={{width: '88px'}} />
+              <img
+                src={logoAkariHorizontal}
+                alt="AKARI"
+                style={{width: '88px'}}
+              />
             </Link>
 
             {/* Hamburger menu */}
@@ -57,6 +61,9 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}>
             <div className="navbar-end has-text-centered">
+              <Link className="navbar-item" to="/">
+                Trang chủ
+              </Link>
               <Link className="navbar-item" to="/about">
                 Về chúng tôi
               </Link>
@@ -66,7 +73,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/#footer">
                 Liên hệ
               </Link>
               <Link className="navbar-item bg-yellow" to="/#myForm">
