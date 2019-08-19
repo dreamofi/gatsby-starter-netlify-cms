@@ -1,111 +1,115 @@
 import React from 'react';
 import {Link} from 'gatsby';
-
 import logoAkari from '../img/logoAkari.svg';
 import facebook from '../img/social/facebook.svg';
-import instagram from '../img/social/instagram.svg';
-import twitter from '../img/social/twitter.svg';
-import vimeo from '../img/social/vimeo.svg';
+import phone from '../img/social/phone.svg';
+import map from '../img/map.jpg';
+import home from '../img/social/home.svg';
+import email from '../img/social/email.svg';
+import 'tachyons';
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer
-        className="footer has-background-black has-text-white-ter"
-        id="footer">
-        <div className="content has-text-centered">
+      <footer className="bg-dark-gray tc" id="footer">
+        <div className="pa4">
           <img
             src={logoAkari}
             alt="Akari"
             style={{width: '14em', height: '10em'}}
           />
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
+
+        <div className="flex flex-wrap pa4">
+          <div className="mv1 w-100 w-40-l pa2">
+            <div className="white mh1">
+              <div className="mv3 tc f4">
+                HỘI KHOA HỌC TÂM LÝ - GIÁO DỤC VIỆT NAM
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+
+              <div className="mv4 tc f3">
+                TRUNG TÂM GIÁO DỤC KỸ NĂNG CHO TRẺ CÓ NHU CẦU ĐẶC BIỆT AKARI
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{width: '1em', height: '1em'}}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{width: '1em', height: '1em'}}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{width: '1em', height: '1em'}}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{width: '1em', height: '1em'}}
-                  />
-                </a>
+
+              <div className="f4 db">
+                <div className="tc tl-l mv2 db">
+                  <span className="dib v-mid">
+                    <img
+                      src={home}
+                      alt="home"
+                      className="mr1"
+                      style={{width: '1.25em', height: '1.25em'}}
+                    />
+                  </span>
+                  61/22/445 Lạc Long Quân, Tây Hồ, Hà Nội
+                </div>
+
+                <div className="db v-mid tc tl-l mv2">
+                  <span className="dib v-mid">
+                    <img
+                      src={phone}
+                      alt="Phone"
+                      className="mr1"
+                      style={{width: '1.25em', height: '1.25em'}}
+                    />
+                  </span>
+
+                  <a
+                    href="tel:0967126614"
+                    className="dib link white hover-orange">
+                    0967126614
+                  </a>
+
+                  <a
+                    href="tel:0989208185"
+                    className="dib ml1 link white hover-orange">
+                    - 0989208185
+                  </a>
+                </div>
+
+                <div className="tc tl-l mv2">
+                  <a
+                    title="facebook"
+                    href="https://facebook.com/classroom.akari"
+                    target="_blank"
+                    className="dib v-mid link white hover-orange">
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      style={{width: '1.25em', height: '1.25em'}}
+                      className="dib v-mid mr1"
+                    />
+                    <span className="dib v-mid">
+                      facebook.com/classroom.akari
+                    </span>
+                  </a>
+                </div>
+
+                <div className="tc tl-l mv2">
+                  <a
+                    title="email"
+                    href="mailto: lophocdacbietakari@gmail.com"
+                    className="dib v-mid link white hover-orange">
+                    <img
+                      src={email}
+                      alt="Email"
+                      style={{width: '1.25em', height: '1.25em'}}
+                      className="dib v-mid mr1"
+                    />
+                    <span className="dib v-mid">
+                      lophocdacbietakari@gmail.com
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
+          <div className="w-100 w-60-l pa4 shadow-1">
+            <a
+              href="https://www.openstreetmap.org/#map=19/21.05935/105.80739&layers=N"
+              target="_blank">
+              <img src={map} alt="map" />
+            </a>
           </div>
         </div>
       </footer>
