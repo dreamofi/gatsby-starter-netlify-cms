@@ -7,7 +7,6 @@ import BlogRoll from '../components/BlogRoll';
 import GForm from '../components/gform';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import 'tachyons';
-import Img from 'gatsby-image';
 
 {
   /*CREATE TEMPLATE FOR INDEX PAGE*/
@@ -133,10 +132,7 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <img
-                          alt=""
-                          src={main.image1.image.childImageSharp.fluid.src}
-                        />
+                        <PreviewCompatibleImage imageInfo={main.image1} />
                       </article>
 
                       <article className="tile is-child">
@@ -278,7 +274,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 1075, quality: 72) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -288,7 +284,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 1075, quality: 72) {
                   ...GatsbyImageSharpFluid
                 }
               }
