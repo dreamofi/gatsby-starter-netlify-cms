@@ -132,21 +132,21 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
+                        <PreviewCompatibleImage imageInfo={main.image1.image} />
                       </article>
 
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
+                        <PreviewCompatibleImage imageInfo={main.image2.image} />
                       </article>
                     </div>
 
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3} />
+                        <PreviewCompatibleImage imageInfo={main.image3.image} />
                       </article>
 
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3} />
+                        <PreviewCompatibleImage imageInfo={main.image4.image} />
                       </article>
                     </div>
                   </div>
@@ -180,6 +180,7 @@ IndexPageTemplate.propTypes = {
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 };
 
@@ -233,6 +234,7 @@ export const pageQuery = graphql`
         description
         intro {
           blurbs {
+            heading
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
@@ -269,6 +271,16 @@ export const pageQuery = graphql`
             }
           }
           image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image4 {
             alt
             image {
               childImageSharp {
