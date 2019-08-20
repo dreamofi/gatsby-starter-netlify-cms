@@ -30,6 +30,10 @@ const IndexPagePreview = ({entry, getAsset}) => {
             image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
             alt: entry.getIn(['data', 'main', 'image3', 'alt']),
           },
+          image4: {
+            image: getAsset(entry.getIn(['data', 'main', 'image4', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image4', 'alt']),
+          },
         }}
       />
     );

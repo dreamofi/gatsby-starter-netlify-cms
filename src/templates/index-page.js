@@ -7,6 +7,7 @@ import BlogRoll from '../components/BlogRoll';
 import GForm from '../components/gform';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import 'tachyons';
+import Img from 'gatsby-image';
 
 {
   /*CREATE TEMPLATE FOR INDEX PAGE*/
@@ -132,21 +133,24 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1.image} />
+                        <img
+                          alt=""
+                          src={main.image1.image.childImageSharp.fluid.src}
+                        />
                       </article>
 
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2.image} />
+                        <PreviewCompatibleImage imageInfo={main.image2} />
                       </article>
                     </div>
 
                     <div className="tile is-parent is-vertical">
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3.image} />
+                        <PreviewCompatibleImage imageInfo={main.image3} />
                       </article>
 
                       <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image4.image} />
+                        <PreviewCompatibleImage imageInfo={main.image4} />
                       </article>
                     </div>
                   </div>
@@ -274,7 +278,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
+                fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -284,7 +288,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
+                fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
