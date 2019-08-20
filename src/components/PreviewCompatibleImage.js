@@ -7,18 +7,26 @@ const PreviewCompatibleImage = ({imageInfo}) => {
   const {alt = '', childImageSharp, image} = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
+    console.log('Case 1');
+    console.log(image);
     return (
       <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
     );
   }
 
   if (!!childImageSharp) {
+    console.log('Case 2');
+    console.log(image);
     return <Img style={imageStyle} fluid={childImageSharp.fluid} alt={alt} />;
   }
 
-  if (!!image && typeof image === 'string')
+  if (!!image && typeof image === 'string') {
+    console.log('Case 3');
+    console.log(image);
     return <img style={imageStyle} src={image} alt={alt} />;
-
+  }
+  console.log('Case 4');
+  console.log(imageInfo);
   return null;
 };
 
