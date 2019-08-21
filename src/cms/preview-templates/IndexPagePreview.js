@@ -19,19 +19,19 @@ const IndexPagePreview = ({entry, getAsset}) => {
           heading: entry.getIn(['data', 'main', 'heading']),
           description: entry.getIn(['data', 'main', 'description']),
           image1: {
-            image: getAsset(entry.getIn(['data', 'main', 'image1', 'image'])),
+            image: entry.getIn(['data', 'main', 'image1', 'image']),
             alt: entry.getIn(['data', 'main', 'image1', 'alt']),
           },
           image2: {
-            image: getAsset(entry.getIn(['data', 'main', 'image2', 'image'])),
+            image: entry.getIn(['data', 'main', 'image2', 'image']),
             alt: entry.getIn(['data', 'main', 'image2', 'alt']),
           },
           image3: {
-            image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
+            image: entry.getIn(['data', 'main', 'image3', 'image']),
             alt: entry.getIn(['data', 'main', 'image3', 'alt']),
           },
           image4: {
-            image: getAsset(entry.getIn(['data', 'main', 'image4', 'image'])),
+            image: entry.getIn(['data', 'main', 'image4', 'image']),
             alt: entry.getIn(['data', 'main', 'image4', 'alt']),
           },
         }}

@@ -84,12 +84,6 @@ export const ProductPageTemplate = ({
                       <PreviewCompatibleImage imageInfo={main.image3} />
                     </article>
                   </div>
-
-                  <div className="tile is-parent is-vertical">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
                 </div>
               </div>
 
