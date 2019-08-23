@@ -3,9 +3,9 @@ templateKey: index-page
 title: TRUNG TÂM AKARI
 image: /img/home-jumbotron.jpg
 heading: AKARI
-subheading: Luôn theo mỗi bước con đi
+subheading: Luôn đồng hành cùng mỗi bước con đi
 mainpitch:
-  title: Why Kaldi
+  title: Tại sao lại là Akari
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
@@ -33,14 +33,16 @@ intro:
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
-    - image: /img/tutorials.png
+    - heading: Can thiệp sớm
+      image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
-    - image: /img/meeting-space.png
+    - heading: Đào tạo nghề nghiệp
+      image: /img/meeting-space.png
       text: >
         We believe that good coffee has the power to bring people together.
         That’s why we decided to turn a corner of our shop into a cozy meeting
@@ -54,7 +56,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
+  heading: Hình ảnh hoạt động của trung tâm
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
