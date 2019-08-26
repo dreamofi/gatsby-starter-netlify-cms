@@ -79,7 +79,7 @@ export const IndexPageTemplate = ({
             </div>
 
             <div className="">
-              <div className="w-90 w-80-m w-70-l center">
+              <div className="w-90 w-80-m w-70-l center pt3">
                 <h3 className="f3">{heading}</h3>
 
                 <p className="f4">{description}</p>
@@ -260,7 +260,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
+                fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -270,7 +270,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
+                fluid(maxWidth: 526, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }

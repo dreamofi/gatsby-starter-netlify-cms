@@ -2,28 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
-const FeatureGrid = ({gridItems}) => (
-  <div className="columns is-multiline">
-    {gridItems.map(item => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <h2>{item.heading}</h2>
-          <div className="has-text-centered">
+const FeatureGrid = ({gridItems}) => {
+  const colorList = ['gold', 'blue', 'green', 'purple'];
+  return (
+    <div className="w-90 w-80-m w-70-l center pt3 flex flex-wrap mid-gray items-stretch justify-center">
+      {gridItems.map((item, index) => (
+        <div key={item.text} className="flex flex-wrap w-80-m w-50-l pa3">
+          <section className="ba br3 b--moon-gray">
             <div
-              style={{
-                width: '240px',
-                display: 'inline-block',
-              }}>
-              <PreviewCompatibleImage imageInfo={item} />
+              className={`bg-${colorList[index]} pv1 bt b--${colorList[index]} br3 br--top`}>
+              <h2 className="tc white f4">{item.heading}</h2>
             </div>
-          </div>
-          <p>{item.text}</p>
-        </section>
-      </div>
-    ))}
-  </div>
-);
 
+            <div className="tc bg-near-white">
+              <div className="db w-40 pv3 center">
+                <PreviewCompatibleImage imageInfo={item} />
+              </div>
+            </div>
+
+            <div className="pa3 ph4">
+              <p>{item.text}</p>
+            </div>
+          </section>
+        </div>
+      ))}
+    </div>
+  );
+};
 FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
