@@ -36,7 +36,10 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav className="pv2" role="navigation" aria-label="main-navigation">
+      <nav
+        className="pv2 bb bw3 b--orange"
+        role="navigation"
+        aria-label="main-navigation">
         <div className="flex-l db flex-row-l items-center h-100">
           <div className="flex h-100 items-center">
             <div className="flex items-center h-100">
