@@ -24,29 +24,22 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-image margin-top-0"
+      className="flex flex-column items-center justify-center w-100 helvetica"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        height: `70vh`,
       }}>
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}>
+      <div className="flex flex-column items-center justify-center helvetica">
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="f3 f1-l f2-m"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgba(255, 68, 0,0.7)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -54,11 +47,11 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="f4 f3-l tc"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgba(255, 68, 0,0.7)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -68,93 +61,86 @@ export const IndexPageTemplate = ({
       </div>
     </div>
 
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+    <section className="">
+      <div className="">
+        <div className="">
+          <div className="helvetica">
+            <div className="w-90 w-80-m w-70-l center pt5">
+              <div className="tc">
+                <h1 className="f1 b ttu">{mainpitch.title}</h1>
+                <div className="h1">
+                  <div className="h-25 w4 bg-orange center"></div>
                 </div>
+              </div>
 
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-
-                    <p>{description}</p>
-                  </div>
-                </div>
-
-                <Features gridItems={intro.blurbs} />
-
-                <div className="columns">
-                  <div className="column is-12 tc">
-                    <Link className="btn" to="/products">
-                      Xem tất cả dịch vụ
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Tin mới nhất
-                  </h3>
-
-                  <BlogRoll />
-
-                  <div className="column is-12 tc">
-                    <Link className="btn" to="/blog">
-                      Xem thêm
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      {main.heading}
-                    </h3>
-
-                    <p>{main.description}</p>
-                  </div>
-                </div>
-
-                <div className="tile is-ancestor">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3} />
-                      </article>
-
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image4} />
-                      </article>
-                    </div>
-                  </div>
-                </div>
-
-                <GForm />
+              <div className="f5">
+                <h3 className="fw4">{mainpitch.description}</h3>
               </div>
             </div>
+
+            <div className="">
+              <div className="w-90 w-80-m w-70-l center">
+                <h3 className="f3">{heading}</h3>
+
+                <p className="f4">{description}</p>
+              </div>
+            </div>
+
+            <Features gridItems={intro.blurbs} />
+
+            <div className="ma3 mv4 b orange tc dim">
+              <div className="tc ba pa3 bw2 w-50 tc center br3">
+                <Link className="link orange b" to="/products">
+                  Xem tất cả dịch vụ
+                </Link>
+              </div>
+            </div>
+
+            <div className="column is-12">
+              <h3 className="has-text-weight-semibold is-size-2">
+                Tin mới nhất
+              </h3>
+
+              <BlogRoll />
+
+              <div className="column is-12 tc">
+                <Link className="btn" to="/blog">
+                  Xem thêm
+                </Link>
+              </div>
+            </div>
+
+            <div className="columns">
+              <div className="column is-7">
+                <h3 className="f3 b">{main.heading}</h3>
+
+                <p className="f4">{main.description}</p>
+              </div>
+            </div>
+
+            <div className="w-100">
+              <div className="w-100">
+                <div className="flex flex-wrap w-100 items-center justify-center">
+                  <article className="w-100 w-50-l pa2">
+                    <PreviewCompatibleImage imageInfo={main.image1} />
+                  </article>
+
+                  <article className="w-100 w-50-l pa2">
+                    <PreviewCompatibleImage imageInfo={main.image2} />
+                  </article>
+
+                  <article className="w-100 w-50-l pa2">
+                    <PreviewCompatibleImage imageInfo={main.image3} />
+                  </article>
+
+                  <article className="w-100 w-50-l pa2">
+                    <PreviewCompatibleImage imageInfo={main.image4} />
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <GForm />
           </div>
         </div>
       </div>

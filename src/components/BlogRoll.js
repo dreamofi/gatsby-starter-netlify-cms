@@ -14,7 +14,7 @@ class BlogRoll extends React.Component {
           posts.map(({node: post}) => (
             <div className="is-parent column is-6" key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
+                className={`blog-list-item is-child box notification h-100 ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}>
                 <header>
@@ -44,10 +44,10 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
                 </p>
+                <Link className="button" to={post.fields.slug}>
+                  Xem chi tiết →
+                </Link>
               </article>
             </div>
           ))}
