@@ -67,7 +67,9 @@ export const IndexPageTemplate = ({
           <div className="helvetica">
             <div className="w-90 w-80-m w-70-l center pt5">
               <div className="tc">
-                <h1 className="f1 b ttu">{mainpitch.title}</h1>
+                <h1 className="f-subheadline lh-title ttu">
+                  {mainpitch.title}
+                </h1>
                 <div className="h1">
                   <div className="h-25 w4 bg-orange center"></div>
                 </div>
@@ -88,38 +90,43 @@ export const IndexPageTemplate = ({
 
             <Features gridItems={intro.blurbs} />
 
-            <div className="ma3 mv4 b orange tc dim">
-              <div className="tc ba pa3 bw2 w-50 tc center br3">
-                <Link className="link orange b" to="/products">
-                  Xem tất cả dịch vụ
-                </Link>
+            <div className="ma3 tc pa4 pb5">
+              <Link
+                className="link orange b ba bw2 tc br3 center pa3  bg-animate hover-bg-orange hover-white b--orange"
+                to="/products">
+                Xem chi tiết dịch vụ
+              </Link>
+            </div>
+
+            <div className="bg-light-gray">
+              <div className="w-90 w-80-l center pt4 pb3">
+                <h2 className="f2 lh-title ttu tc helvetica">Tin mới nhất</h2>
+                <div className="h1">
+                  <div className="h-25 w4 bg-orange center mb2"></div>
+                </div>
+
+                <BlogRoll />
+
+                <div className="ma3 mb4 tc pa4">
+                  <Link
+                    className="link white bg-orange b ba bw2 tc br3 center pa3 bg-animate hover-bg-white hover-orange b--orange"
+                    to="/blog">
+                    Xem thêm tin bài
+                  </Link>
+                </div>
               </div>
             </div>
 
-            <div className="column is-12">
-              <h3 className="has-text-weight-semibold is-size-2">
-                Tin mới nhất
-              </h3>
-
-              <BlogRoll />
-
-              <div className="column is-12 tc">
-                <Link className="btn" to="/blog">
-                  Xem thêm
-                </Link>
-              </div>
-            </div>
-
-            <div className="columns">
-              <div className="column is-7">
-                <h3 className="f3 b">{main.heading}</h3>
+            <div className="flex bg-near-white">
+              <div className="w-90 w-80-m w-70-l center pv3 ">
+                <h3 className="f3 b pt2">{main.heading}</h3>
 
                 <p className="f4">{main.description}</p>
               </div>
             </div>
 
-            <div className="w-100">
-              <div className="w-100">
+            <div className="bg-near-white pb4">
+              <div className="w-90 w-80-l center pb3">
                 <div className="flex flex-wrap w-100 items-center justify-center">
                   <article className="w-100 w-50-l pa2">
                     <PreviewCompatibleImage imageInfo={main.image1} />

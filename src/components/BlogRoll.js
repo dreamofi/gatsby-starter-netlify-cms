@@ -9,17 +9,21 @@ class BlogRoll extends React.Component {
     const {edges: posts} = data.allMarkdownRemark;
 
     return (
-      <div className="columns is-multiline">
+      <div className="flex flex-wrap helvetica mid-gray pt2">
         {posts &&
           posts.map(({node: post}) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div
+              className="flex flex-wrap w-50-m w-third-l pa3 items-stretch justify-center"
+              key={post.id}>
               <article
-                className={`blog-list-item is-child box notification h-100 ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                className={`flex flex-wrap pa3 ba br3 b--moon-gray items-stretch justify-center ${
+                  post.frontmatter.featuredpost
+                    ? 'bg-washed-yellow'
+                    : 'bg-white'
                 }`}>
-                <header>
+                <header className="flex flex-wrap items-stretch justify-center w-100">
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div className="w-100">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -28,24 +32,23 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
+                  <p className="db w-100 ph2">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="db f4 b dim link mid-gray pb2"
                       to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
+                    <span className="db w-100 f5">{post.frontmatter.date}</span>
                   </p>
                 </header>
-                <p>
+                <p className="db ph2">
                   {post.excerpt}
                   <br />
                   <br />
                 </p>
-                <Link className="button" to={post.fields.slug}>
+                <Link
+                  className="db dim link dark-green b self-end"
+                  to={post.fields.slug}>
                   Xem chi tiết →
                 </Link>
               </article>
@@ -86,7 +89,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 800, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
