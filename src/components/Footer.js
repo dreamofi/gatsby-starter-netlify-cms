@@ -11,106 +11,147 @@ import 'tachyons';
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="mt4 pt4 bg-dark-gray tc sans-serif" id="footer">
-        <div className="pt3">
-          <img
-            src={logoAkari}
-            alt="Akari"
-            style={{width: '14em', height: '10em'}}
-          />
-        </div>
+      <footer
+        className="bg-dark-gray tc sans-serif pa4 pv5 helvetica"
+        id="footer">
+        <div className="flex-l tc pa3">
+          <div className="flex w-30-l pv3 pv0-l tc">
+            <img
+              src={logoAkari}
+              alt="Akari"
+              style={{width: '14em', height: '14em'}}
+              className="bg-near-white pa2 ba bw3 br4 b--orange center"
+            />
+          </div>
 
-        <div className="flex flex-wrap pa4">
-          <div className="mv1 mv0-l w-100 w-40-l pa2">
-            <div className="white mh1">
-              <div className="mv3 tc f4">
-                HỘI KHOA HỌC TÂM LÝ - GIÁO DỤC VIỆT NAM
-              </div>
+          <div className="white db w-100 w-70-l ph5">
+            <div className="tc f4 pa2 w-100 lh-copy">
+              HỘI KHOA HỌC TÂM LÝ - GIÁO DỤC VIỆT NAM
+            </div>
 
-              <div className="mv4 tc f3">
-                TRUNG TÂM GIÁO DỤC KỸ NĂNG CHO TRẺ CÓ NHU CẦU ĐẶC BIỆT AKARI
-              </div>
+            <div className="tc f3 pa2 w-100 lh-copy">
+              TRUNG TÂM GIÁO DỤC KỸ NĂNG CHO TRẺ CÓ NHU CẦU ĐẶC BIỆT AKARI
+            </div>
 
-              <div>
-                <a
-                  href="https://www.openstreetmap.org/#map=19/21.05935/105.80739&layers=N"
-                  target="_blank">
-                  <img src={map} alt="map" />
-                </a>
+            <div className="w-100">
+              <div className="f4 db pa4 tc">
+                <div className="tc mv2 db w-100 near-white">
+                  61/22/445 Lạc Long Quân, Tây Hồ, Hà Nội
+                </div>
+
+                <div className="db w-100 v-mid tc mv2">
+                  <a
+                    href="tel:0967126614"
+                    className="dib link near-white hover-orange">
+                    0967126614
+                  </a>
+
+                  <a
+                    href="tel:0989208185"
+                    className="dib ml1 link near-white hover-orange">
+                    - 0989208185
+                  </a>
+                </div>
+
+                <div className="db tc w-100 mv2">
+                  <a
+                    title="facebook"
+                    href="https://facebook.com/classroom.akari"
+                    target="_blank"
+                    className="dib v-mid link near-white hover-orange">
+                    <img
+                      src={facebook}
+                      alt="Facebook"
+                      style={{width: '1.25em', height: '1.25em'}}
+                      className="dib v-mid mr1"
+                    />
+                    <span className="dib v-mid">classroom.akari</span>
+                  </a>
+                </div>
+
+                <div className="db w-100 tc mv2">
+                  <a
+                    title="email"
+                    href="mailto: lophocdacbietakari@gmail.com"
+                    className="dib v-mid link near-white hover-orange">
+                    <img
+                      src={email}
+                      alt="Facebook"
+                      style={{width: '1.25em', height: '1.25em'}}
+                      className="dib v-mid mr1"
+                    />
+                    <span className="dib v-mid">
+                      lophocdacbietakari@gmail.com
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="w-100 w-60-l pl4">
-            <div className="f4 db">
-              <div className="tc tl-l mv2 db white">
-                <span className="dib v-mid">
-                  <img
-                    src={home}
-                    alt="home"
-                    className="mr1"
-                    style={{width: '1.25em', height: '1.25em'}}
-                  />
-                </span>
-                61/22/445 Lạc Long Quân, Tây Hồ, Hà Nội
-              </div>
+        </div>
 
-              <div className="db v-mid tc tl-l mv2">
-                <span className="dib v-mid">
-                  <img
-                    src={phone}
-                    alt="Phone"
-                    className="mr1"
-                    style={{width: '1.25em', height: '1.25em'}}
-                  />
-                </span>
+        <div className="w-100 pa-5 h1">
+          <div className="h-25 bg-near-white w-90 center"></div>
+        </div>
 
-                <a
-                  href="tel:0967126614"
-                  className="dib link white hover-orange">
-                  0967126614
-                </a>
+        <div className="flex flex-wrap pa5">
+          <div className="mv1 mv0-l w-100 w-60-l ph4">
+            <div>
+              <a
+                href="https://www.openstreetmap.org/#map=19/21.05935/105.80739&layers=N"
+                target="_blank">
+                <img src={map} alt="map" />
+              </a>
+            </div>
+          </div>
 
-                <a
-                  href="tel:0989208185"
-                  className="dib ml1 link white hover-orange">
-                  - 0989208185
-                </a>
-              </div>
+          <div className="flex flex-wrap flex-column-l w-100 w-40-l ph4">
+            <div className="flex items-center tr f4 f3-l link">
+              <Link
+                className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
+                to="/">
+                Trang chủ
+              </Link>
+            </div>
 
-              <div className="tc tl-l mv2">
-                <a
-                  title="facebook"
-                  href="https://facebook.com/classroom.akari"
-                  target="_blank"
-                  className="dib v-mid link white hover-orange">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{width: '1.25em', height: '1.25em'}}
-                    className="dib v-mid mr1"
-                  />
-                  <span className="dib v-mid">
-                    facebook.com/classroom.akari
-                  </span>
-                </a>
-              </div>
+            <div className="flex items-center tr f4 f3-l link">
+              <Link
+                className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
+                to="/about">
+                Về chúng tôi
+              </Link>
+            </div>
 
-              <div className="tc tl-l mv2">
-                <a
-                  title="email"
-                  href="mailto: lophocdacbietakari@gmail.com"
-                  className="dib v-mid link white hover-orange">
-                  <img
-                    src={email}
-                    alt="Email"
-                    style={{width: '1.25em', height: '1.25em'}}
-                    className="dib v-mid mr1"
-                  />
-                  <span className="dib v-mid">
-                    lophocdacbietakari@gmail.com
-                  </span>
-                </a>
-              </div>
+            <div className="flex items-center  tr f4 f3-l link">
+              <Link
+                className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
+                to="/products">
+                Dịch vụ
+              </Link>
+            </div>
+
+            <div className="flex items-center  tr f4 f3-l link">
+              <Link
+                className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
+                to="/blog">
+                Blog
+              </Link>
+            </div>
+
+            <div className="flex items-center  tr f4 f3-l link">
+              <Link
+                className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
+                to="/#footer">
+                Liên hệ
+              </Link>
+            </div>
+
+            <div className="flex items-center  tr f4 f3-l link">
+              <Link
+                className="link orange hover-yellow helvetica fw6 ttu w-100 pa3 ph3-l tr"
+                to="/#myForm">
+                Đặt lịch hẹn
+              </Link>
             </div>
           </div>
         </div>

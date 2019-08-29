@@ -24,7 +24,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="flex flex-column items-center justify-center w-100 helvetica"
+      className="db flex flex-column items-center justify-center w-100 helvetica"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
         height: `70vh`,
       }}>
-      <div className="flex flex-column items-center justify-center helvetica">
+      <div className="db flex flex-column items-center justify-center helvetica">
         <h1
           className="f3 f1-l f2-m"
           style={{
@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({
       <div className="">
         <div className="">
           <div className="helvetica">
-            <div className="w-90 w-80-m w-70-l center pt5">
+            <div className="w-90 w-80-m w-70-l center pv5">
               <div className="tc">
                 <h1 className="f-subheadline lh-title ttu">
                   {mainpitch.title}
@@ -99,7 +99,7 @@ export const IndexPageTemplate = ({
             </div>
 
             <div className="bg-light-gray">
-              <div className="w-90 w-80-l center pt4 pb3">
+              <div className="w-90 w-80-l center pv5">
                 <h2 className="f2 lh-title ttu tc helvetica">Tin mới nhất</h2>
                 <div className="h1">
                   <div className="h-25 w4 bg-orange center mb2"></div>
@@ -117,7 +117,7 @@ export const IndexPageTemplate = ({
               </div>
             </div>
 
-            <div className="flex bg-near-white">
+            <div className="flex bg-near-white pv5">
               <div className="w-90 w-80-m w-70-l center pv3 ">
                 <h3 className="f3 b pt2">{main.heading}</h3>
 
@@ -125,7 +125,7 @@ export const IndexPageTemplate = ({
               </div>
             </div>
 
-            <div className="bg-near-white pb4">
+            <div className="bg-near-white pb6">
               <div className="w-90 w-80-l center pb3">
                 <div className="flex flex-wrap w-100 items-center justify-center">
                   <article className="w-100 w-50-l pa2">
