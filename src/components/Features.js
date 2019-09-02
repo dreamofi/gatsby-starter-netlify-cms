@@ -11,7 +11,7 @@ const FeatureGrid = ({gridItems}) => {
           <section className="ba br3 b--moon-gray">
             <div
               className={`bg-${colorList[index]} pv1 bt b--${colorList[index]} br3 br--top`}>
-              <h2 className="tc white f4">{item.heading}</h2>
+              <h2 className="tc white f5 f4-l">{item.heading}</h2>
             </div>
 
             <div className="tc bg-near-white">
@@ -20,7 +20,7 @@ const FeatureGrid = ({gridItems}) => {
               </div>
             </div>
 
-            <div className="pa3 ph4">
+            <div className="f6 f5-l pa3 ph4">
               <p>{item.text}</p>
             </div>
           </section>

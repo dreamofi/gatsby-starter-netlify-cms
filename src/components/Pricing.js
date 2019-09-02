@@ -1,21 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Pricing = ({ data }) => (
-  <div className="columns">
+const Pricing = ({data}) => (
+  <div className="flex flex-wrap justify-center">
     {data.map(price => (
-      <div key={price.plan} className="column">
-        <section className="section">
-          <h4 className="has-text-centered has-text-weight-semibold">
-            {price.plan}
-          </h4>
-          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
-            ${price.price}
-          </h2>
-          <p className="has-text-weight-semibold">{price.description}</p>
+      <div key={price.plan} className="w-100 w-33-m w-33-l pa2">
+        <section className="">
+          <h4 className="tc b">{price.plan}</h4>
+          <h2 className="f4 f3-l b tc">${price.price}</h2>
+          <p>{price.description}</p>
           <ul>
             {price.items.map(item => (
-              <li key={item} className="is-size-5">
+              <li key={item} className="f5">
                 {item}
               </li>
             ))}
@@ -24,7 +20,7 @@ const Pricing = ({ data }) => (
       </div>
     ))}
   </div>
-)
+);
 
 Pricing.propTypes = {
   data: PropTypes.arrayOf(
@@ -33,8 +29,8 @@ Pricing.propTypes = {
       price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       description: PropTypes.string,
       items: PropTypes.array,
-    })
+    }),
   ),
-}
+};
 
-export default Pricing
+export default Pricing;

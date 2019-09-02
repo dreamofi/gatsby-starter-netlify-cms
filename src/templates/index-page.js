@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
       }}>
       <div className="db flex flex-column items-center justify-center helvetica">
         <h1
-          className="f3 f1-l f2-m"
+          className="f3 f1-l f2-m tc"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -65,9 +65,9 @@ export const IndexPageTemplate = ({
       <div className="">
         <div className="">
           <div className="helvetica">
-            <div className="w-90 w-80-m w-70-l center pv5">
+            <div className="w-90 w-80-m w-70-l center pv4 pv5-l">
               <div className="tc">
-                <h1 className="f-subheadline lh-title ttu">
+                <h1 className="f3 f-subheadline-l lh-title ttu">
                   {mainpitch.title}
                 </h1>
                 <div className="h1">
@@ -75,41 +75,43 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
 
-              <div className="f5">
+              <div className="f6 f5-l">
                 <h3 className="fw4">{mainpitch.description}</h3>
               </div>
             </div>
 
             <div className="">
-              <div className="w-90 w-80-m w-70-l center pt3">
-                <h3 className="f3">{heading}</h3>
+              <div className="w-90 w-80-m w-70-l center p2 pt3-l">
+                <h3 className="f4 f3-l">{heading}</h3>
 
-                <p className="f4">{description}</p>
+                <p className="f6 f5-l">{description}</p>
               </div>
             </div>
 
             <Features gridItems={intro.blurbs} />
 
-            <div className="ma3 tc pa4 pb5">
+            <div className="db mw6 ma3 tc pa4 pb5 center">
               <Link
-                className="link orange b ba bw2 tc br3 center pa3  bg-animate hover-bg-orange hover-white b--orange"
+                className="db link orange b ba bw2 tc br3 center pa2 pa3-l  bg-animate hover-bg-orange hover-white b--orange"
                 to="/products">
                 Xem chi tiết dịch vụ
               </Link>
             </div>
 
             <div className="bg-light-gray">
-              <div className="w-90 w-80-l center pv5">
-                <h2 className="f2 lh-title ttu tc helvetica">Tin mới nhất</h2>
+              <div className="w-90 w-80-l center pv4 pv5-l">
+                <h2 className="f3 f2-l lh-title ttu tc helvetica">
+                  Tin mới nhất
+                </h2>
                 <div className="h1">
                   <div className="h-25 w4 bg-orange center mb2"></div>
                 </div>
 
                 <BlogRoll />
 
-                <div className="ma3 mb4 tc pa4">
+                <div className="ma3 mw6 mb4 tc pa2 pa4-l center">
                   <Link
-                    className="link white bg-orange b ba bw2 tc br3 center pa3 bg-animate hover-bg-white hover-orange b--orange"
+                    className="db link white bg-orange b ba bw2 tc br3 center pa2 pa3-l bg-animate hover-bg-white hover-orange b--orange"
                     to="/blog">
                     Xem thêm tin bài
                   </Link>
@@ -117,15 +119,15 @@ export const IndexPageTemplate = ({
               </div>
             </div>
 
-            <div className="flex bg-near-white pv5">
-              <div className="w-90 w-80-m w-70-l center pv3 ">
-                <h3 className="f3 b pt2">{main.heading}</h3>
+            <div className="flex bg-near-white pv3 pv5-l">
+              <div className="w-90 w-80-m w-70-l center pv2 pv3-l">
+                <h3 className="f4 f3-l b pt2">{main.heading}</h3>
 
-                <p className="f4">{main.description}</p>
+                <p className="f5 f4-l">{main.description}</p>
               </div>
             </div>
 
-            <div className="bg-near-white pb6">
+            <div className="bg-near-white pb4 pb5-l">
               <div className="w-90 w-80-l center pb3">
                 <div className="flex flex-wrap w-100 items-center justify-center">
                   <article className="w-100 w-50-l pa2">

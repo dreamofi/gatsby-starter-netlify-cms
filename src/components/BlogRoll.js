@@ -13,7 +13,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({node: post}) => (
             <div
-              className="flex flex-wrap w-50-m w-third-l pa3 items-stretch justify-center"
+              className="flex flex-wrap w-50-m w-third-l pa2 pa3-ns items-stretch justify-center"
               key={post.id}>
               <article
                 className={`flex flex-wrap pa3 ba br3 b--moon-gray items-stretch justify-center ${
@@ -34,14 +34,16 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="db w-100 ph2">
                     <Link
-                      className="db f4 b dim link mid-gray pb2"
+                      className="db f5 f4-ns b dim link mid-gray pb2"
                       to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
-                    <span className="db w-100 f5">{post.frontmatter.date}</span>
+                    <span className="db w-100 f6 f5-ns">
+                      {post.frontmatter.date}
+                    </span>
                   </p>
                 </header>
-                <p className="db ph2">
+                <p className="db ph2 f6 f5-ns">
                   {post.excerpt}
                   <br />
                   <br />

@@ -1,10 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import {kebabCase} from 'lodash';
+import Helmet from 'react-helmet';
+import {graphql, Link} from 'gatsby';
+import Layout from '../components/Layout';
+import Content, {HTMLContent} from '../components/Content';
+import 'tachyons';
+import blockquoteStyle from '../components/blog-post.module.scss';
 
 export const BlogPostTemplate = ({
   content,
@@ -14,26 +16,26 @@ export const BlogPostTemplate = ({
   title,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section className="helvetica">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
+      <div className="">
+        <div className="">
+          <div className="w-90 w-80-m w-70-l center pv3 pv4-l">
+            <h1 className="f3 f1-l b">{title}</h1>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
+              <div className="mt4">
                 <h4>Tags</h4>
-                <ul className="taglist">
+                <ul className="flex flex-wrap list">
                   {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    <li key={tag + `tag`} className="db pa2">
+                      <Link to={`/tags/${kebabCase(tag)}/`} className="link">
+                        {tag}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -43,8 +45,8 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -52,10 +54,10 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-}
+};
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+const BlogPost = ({data}) => {
+  const {markdownRemark: post} = data;
 
   return (
     <Layout>
@@ -76,20 +78,20 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       id
       html
       frontmatter {
@@ -100,4 +102,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

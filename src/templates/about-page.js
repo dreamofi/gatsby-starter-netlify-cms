@@ -3,22 +3,17 @@ import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/Layout';
 import Content, {HTMLContent} from '../components/Content';
+import 'tachyons';
 
 export const AboutPageTemplate = ({title, content, contentComponent}) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
+    <section className="bg-light-gray helvetica">
+      <div className="w-90 w-80-l center pv3 pv4-l">
+        <div className="pa2 pa4-l">
+          <h2 className="mv0 f3 b pa3 pt3">{title}</h2>
+          <PageContent className="content" content={content} />
         </div>
       </div>
     </section>

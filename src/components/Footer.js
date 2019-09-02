@@ -12,34 +12,34 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer
-        className="bg-dark-gray tc sans-serif pa4 pv5 helvetica"
+        className="bg-dark-gray tc sans-serif pa3 ph4-l pv5-l helvetica"
         id="footer">
         <div className="flex-l tc pa3">
           <div className="flex w-30-l pv3 pv0-l tc">
             <img
               src={logoAkari}
               alt="Akari"
-              style={{width: '14em', height: '14em'}}
+              style={{width: '12em', height: '12em'}}
               className="bg-near-white pa2 ba bw3 br4 b--orange center"
             />
           </div>
 
-          <div className="white db w-100 w-70-l ph5">
-            <div className="tc f4 pa2 w-100 lh-copy">
+          <div className="white db w-100 w-70-l ph5-l">
+            <div className="tc f5 f4-l pa2 w-100 lh-copy">
               HỘI KHOA HỌC TÂM LÝ - GIÁO DỤC VIỆT NAM
             </div>
 
-            <div className="tc f3 pa2 w-100 lh-copy">
+            <div className="tc f4 f3-l pa2 w-100 lh-copy">
               TRUNG TÂM GIÁO DỤC KỸ NĂNG CHO TRẺ CÓ NHU CẦU ĐẶC BIỆT AKARI
             </div>
 
             <div className="w-100">
-              <div className="f4 db pa4 tc">
-                <div className="tc mv2 db w-100 near-white">
+              <div className="f6 f4-l db pa4-l tc-l">
+                <div className="tl tc-ns mv2 db w-100 near-white">
                   61/22/445 Lạc Long Quân, Tây Hồ, Hà Nội
                 </div>
 
-                <div className="db w-100 v-mid tc mv2">
+                <div className="db w-100 v-mid tl tc-ns mv2">
                   <a
                     href="tel:0967126614"
                     className="dib link near-white hover-orange">
@@ -53,7 +53,7 @@ const Footer = class extends React.Component {
                   </a>
                 </div>
 
-                <div className="db tc w-100 mv2">
+                <div className="db tl tc-ns w-100 mv2">
                   <a
                     title="facebook"
                     href="https://facebook.com/classroom.akari"
@@ -69,7 +69,7 @@ const Footer = class extends React.Component {
                   </a>
                 </div>
 
-                <div className="db w-100 tc mv2">
+                <div className="db w-100 tl tc-ns mv2">
                   <a
                     title="email"
                     href="mailto: lophocdacbietakari@gmail.com"
@@ -90,11 +90,11 @@ const Footer = class extends React.Component {
           </div>
         </div>
 
-        <div className="w-100 pa-5 h1">
+        <div className="w-100 h1">
           <div className="h-25 bg-near-white w-90 center"></div>
         </div>
 
-        <div className="flex flex-wrap pa5">
+        <div className="flex flex-wrap pa5-l">
           <div className="mv1 mv0-l w-100 w-60-l ph4">
             <div>
               <a
@@ -106,7 +106,7 @@ const Footer = class extends React.Component {
           </div>
 
           <div className="flex flex-wrap flex-column-l w-100 w-40-l ph4">
-            <div className="flex items-center tr f4 f3-l link">
+            <div className="flex items-center tl tr-l f5 f3-l link">
               <Link
                 className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
                 to="/">
@@ -114,7 +114,7 @@ const Footer = class extends React.Component {
               </Link>
             </div>
 
-            <div className="flex items-center tr f4 f3-l link">
+            <div className="flex items-center tl tr-l f5 f3-l link">
               <Link
                 className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
                 to="/about">
@@ -122,7 +122,7 @@ const Footer = class extends React.Component {
               </Link>
             </div>
 
-            <div className="flex items-center  tr f4 f3-l link">
+            <div className="flex items-center  tl tr-l f5 f3-l link">
               <Link
                 className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
                 to="/products">
@@ -130,7 +130,7 @@ const Footer = class extends React.Component {
               </Link>
             </div>
 
-            <div className="flex items-center  tr f4 f3-l link">
+            <div className="flex items-center  tl tr-l f5 f3-l link">
               <Link
                 className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
                 to="/blog">
@@ -138,7 +138,7 @@ const Footer = class extends React.Component {
               </Link>
             </div>
 
-            <div className="flex items-center  tr f4 f3-l link">
+            <div className="flex items-center  tl tr-l f5 f3-l link">
               <Link
                 className="link center near-white helvetica fw6 ttu w-100 pa3 ph3-l hover-yellow"
                 to="/#footer">
@@ -146,7 +146,7 @@ const Footer = class extends React.Component {
               </Link>
             </div>
 
-            <div className="flex items-center  tr f4 f3-l link">
+            <div className="flex items-center  tl tr-l f5 f3-l link">
               <Link
                 className="link orange hover-yellow helvetica fw6 ttu w-100 pa3 ph3-l tr"
                 to="/#myForm">

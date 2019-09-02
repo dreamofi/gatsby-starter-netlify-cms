@@ -6,14 +6,14 @@ const GForm = () => {
   const [displayToggle, toggleState] = useState('db');
   return (
     <div id="myForm" className="bg-orange">
-      <div className="w-90 w-80-l pv5 center">
-        <h2 className="f2 lh-copy helvetica tc white">Đặt lịch hẹn</h2>
-        <div className="h1 mb3">
+      <div className="w-90 w-80-l pv4 pv5-l center">
+        <h2 className="f4 f3-l lh-copy helvetica tc white">Đặt lịch hẹn</h2>
+        <div className="h1 mb2  mb3-l">
           <div className="h-25 w4 bg-near-white center"></div>
         </div>
 
-        <div className="flex flex-wrap flex-row-reverse-l pv3 white">
-          <div className="w-100 w-30-l f3 pa3 tc tl-l">
+        <div className="flex flex-wrap flex-row-reverse-l pv2 pv3-l white">
+          <div className="w-100 w-30-l f4 f3-l pa2 pa3-l tc tl-l">
             <h4>Chúng tôi luôn đảm bảo mọi dịch vụ</h4>
             <p>Đừng ngần ngại liên hệ với chúng tôi</p>
           </div>
@@ -26,7 +26,7 @@ const GForm = () => {
               target="_blank">
               <fieldset className="center mw6 bg-light-gray">
                 <div className="db w-100 wm-100">
-                  <label className="f4 db pv2" htmlFor="name">
+                  <label className="f5 f4-ns db pv2" htmlFor="name">
                     Họ tên*
                   </label>
                   <div className="control">
@@ -42,7 +42,7 @@ const GForm = () => {
                 </div>
 
                 <div className="db w-100">
-                  <label className="f4 db pv2" htmlFor="email">
+                  <label className="f5 f4-ns db pv2" htmlFor="email">
                     Email*
                   </label>
                   <div className="control">
@@ -57,7 +57,7 @@ const GForm = () => {
                 </div>
 
                 <div className="db w-100 wm-100">
-                  <label className="f4 db pv2" htmlFor="phone">
+                  <label className="f5 f4-ns db pv2" htmlFor="phone">
                     Điện thoại*
                   </label>
                   <div className="">
@@ -72,7 +72,7 @@ const GForm = () => {
                   </div>
                 </div>
                 <div className="db w-100 wm-100">
-                  <label className="f4 db pv2" htmlFor="address">
+                  <label className="f5 f4-ns db pv2" htmlFor="address">
                     Địa chỉ
                   </label>
                   <div className="control">
@@ -87,7 +87,7 @@ const GForm = () => {
                 </div>
 
                 <div className="db w-100 wm-100">
-                  <label className="f4 db pv2">Nội dung liên hệ</label>
+                  <label className="f5 f4-ns db pv2">Nội dung liên hệ</label>
                   <div className="control">
                     <div className="db">
                       <select
@@ -111,14 +111,14 @@ const GForm = () => {
                 </div>
 
                 <div className={`${displayToggle}`}>
-                  <label className="f4 db pv2">Chọn ngày hẹn</label>
+                  <label className="f5 f4-ns db pv2">Chọn ngày hẹn</label>
                   <div className="control date-picker pv2">
                     <MyForm />
                   </div>
                 </div>
 
                 <div className="db w-100">
-                  <label className="f4 db pv2">Lời nhắn</label>
+                  <label className="f5 f4-ns db pv2">Lời nhắn</label>
                   <div className="db w-100 ">
                     <textarea
                       rows="5"
