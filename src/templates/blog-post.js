@@ -7,7 +7,9 @@ import Layout from '../components/Layout';
 import Content, {HTMLContent} from '../components/Content';
 import 'tachyons';
 import blockquoteStyle from '../components/blog-post.module.scss';
+import SimilarPosts from '../components/related-post.js';
 
+//Create template for the blog page
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -41,6 +43,7 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            <SimilarPosts />
           </div>
         </div>
       </div>
@@ -48,6 +51,7 @@ export const BlogPostTemplate = ({
   );
 };
 
+//For propTypes check of the template
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
@@ -56,6 +60,7 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 };
 
+// Render the whole blog page
 const BlogPost = ({data}) => {
   const {markdownRemark: post} = data;
 
@@ -81,6 +86,7 @@ const BlogPost = ({data}) => {
   );
 };
 
+//Proptypes for Blog page
 BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
@@ -89,6 +95,7 @@ BlogPost.propTypes = {
 
 export default BlogPost;
 
+//Query for the page
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: {eq: $id}) {

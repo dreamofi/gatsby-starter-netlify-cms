@@ -24,7 +24,7 @@ export default class BlogIndexPage extends React.Component {
             Tin mới nhất
           </h1>
         </div>
-        <section className="">
+        <section className="bg-near-white">
           <div className="">
             <div className="w-90 w-80-m w-70-l center pv3 pv4-l">
               <BlogRoll />
