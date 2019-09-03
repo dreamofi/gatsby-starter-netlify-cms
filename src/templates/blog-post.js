@@ -43,7 +43,6 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-            <SimilarPosts />
           </div>
         </div>
       </div>
@@ -63,6 +62,9 @@ BlogPostTemplate.propTypes = {
 // Render the whole blog page
 const BlogPost = ({data}) => {
   const {markdownRemark: post} = data;
+  //Get current post ID and Tag for returning similar posts
+  const curId = post.id;
+  const curTag = post.frontmatter.tags;
 
   return (
     <Layout>
@@ -82,6 +84,7 @@ const BlogPost = ({data}) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
+      <SimilarPosts curId={curId} curTag={curTag} />
     </Layout>
   );
 };
