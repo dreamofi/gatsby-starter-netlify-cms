@@ -1,31 +1,30 @@
-import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import React from 'react';
+import {kebabCase} from 'lodash';
+import Helmet from 'react-helmet';
+import {Link, graphql} from 'gatsby';
+import Layout from '../../components/Layout';
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allMarkdownRemark: {group},
     site: {
-      siteMetadata: { title },
+      siteMetadata: {title},
     },
   },
 }) => (
   <Layout>
-    <section className="section">
+    <section className="bg-near-white">
       <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+      <div className="w-90 w-80-m w-70-l center pv3 pv5-l helvetica">
+        <div className="">
+          <div className="mb5">
+            <h1 className="">Tags</h1>
+            <ul className="">
               {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                <li className="list dib pa3 f5 f4-l" key={tag.fieldValue}>
+                  <Link
+                    className="link"
+                    to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                     {tag.fieldValue} ({tag.totalCount})
                   </Link>
                 </li>
@@ -36,9 +35,9 @@ const TagsPage = ({
       </div>
     </section>
   </Layout>
-)
+);
 
-export default TagsPage
+export default TagsPage;
 
 export const tagPageQuery = graphql`
   query TagsQuery {
@@ -54,4 +53,4 @@ export const tagPageQuery = graphql`
       }
     }
   }
-`
+`;
