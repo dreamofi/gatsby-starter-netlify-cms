@@ -7,7 +7,9 @@ const FeatureGrid = ({gridItems}) => {
   return (
     <div className="w-90 w-80-m w-70-l center pt3 flex flex-wrap mid-gray items-stretch justify-center">
       {gridItems.map((item, index) => (
-        <div key={item.text} className="flex flex-wrap w-80-m w-50-l pa3">
+        <div
+          key={item.text}
+          className="flex flex-wrap w-80-m w-50-l pa3 shadow-hover">
           <section className="ba br3 b--moon-gray">
             <div
               className={`bg-${colorList[index]} pv1 bt b--${colorList[index]} br3 br--top`}>

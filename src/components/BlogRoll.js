@@ -13,7 +13,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({node: post}) => (
             <div
-              className="flex flex-wrap w-50-m w-third-l pa2 pa3-ns items-stretch justify-center"
+              className="flex flex-wrap w-50-m w-third-l pa2 pa3-ns items-stretch justify-center grow"
               key={post.id}>
               <article
                 className={`flex flex-wrap pa3 ba br3 b--moon-gray items-stretch justify-center ${

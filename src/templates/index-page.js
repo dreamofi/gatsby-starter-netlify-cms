@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
         height: `70vh`,
       }}>
-      <div className="db flex flex-column items-center justify-center helvetica">
+      <div className="db flex flex-column items-center justify-center helvetica h-100">
         <h1
           className="f3 f1-l f2-m tc"
           style={{
@@ -59,6 +59,20 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
+
+      <div
+        style={{
+          backgroundSize: `120px 1200px`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 200' style='enable-background:new 0 0 20 800;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .kf%7Bfill:%23FFFFFF;%7D %3C/style%3E %3Ctitle%3Ekoro-basic-fog-0%3C/title%3E %3Cpath class='kf' d='M0,800h800'/%3E %3Cpath class='kf' d='M0,800h20V0c-4.9,0-5,2.6-9.9,2.6S5,0,0,0V800z'/%3E %3C/svg%3E ")`,
+          backgroundPosition: `top`,
+          backgroundRepeat: `repeat-x`,
+          height: `20px`,
+          width: `100%`,
+          left: `0`,
+          right: `0`,
+          zIndex: `9`,
+          marginTop: `auto`,
+        }}></div>
     </div>
 
     <section className="">
@@ -97,6 +111,20 @@ export const IndexPageTemplate = ({
                 Xem chi tiết dịch vụ
               </Link>
             </div>
+
+            <div
+              style={{
+                backgroundSize: `120px 1200px`,
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 200' style='enable-background:new 0 0 20 800;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .kf%7Bfill:%23EEEEEE;%7D %3C/style%3E %3Ctitle%3Ekoro-basic-fog-0%3C/title%3E %3Cpath class='kf' d='M0,800h800'/%3E %3Cpath class='kf' d='M0,800h20V0c-4.9,0-5,2.6-9.9,2.6S5,0,0,0V800z'/%3E %3C/svg%3E ")`,
+                backgroundPosition: `top`,
+                backgroundRepeat: `repeat-x`,
+                height: `20px`,
+                width: `100%`,
+                left: `0`,
+                right: `0`,
+                zIndex: `9`,
+                marginTop: `auto`,
+              }}></div>
 
             <div className="bg-light-gray">
               <div className="w-90 w-80-l center pv4 pv5-l">
@@ -148,6 +176,21 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </div>
+
+            <div
+              className="bg-near-white"
+              style={{
+                backgroundSize: `120px 1200px`,
+                backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 200' style='enable-background:new 0 0 20 800;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .kf%7Bfill:%23FF6300;%7D %3C/style%3E %3Ctitle%3Ekoro-basic-fog-0%3C/title%3E %3Cpath class='kf' d='M0,800h800'/%3E %3Cpath class='kf' d='M0,800h20V0c-4.9,0-5,2.6-9.9,2.6S5,0,0,0V800z'/%3E %3C/svg%3E ")`,
+                backgroundPosition: `top`,
+                backgroundRepeat: `repeat-x`,
+                height: `20px`,
+                width: `100%`,
+                left: `0`,
+                right: `0`,
+                zIndex: `9`,
+                marginTop: `auto`,
+              }}></div>
 
             <GForm />
           </div>
