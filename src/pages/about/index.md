@@ -2,16 +2,18 @@
 templateKey: about-page
 title: About our values
 ---
-![Test image](/img/blog-index.jpg "Grown")
+
+![Test image](/img/blog-index.jpg 'Grown')
 
 ## GIỚI THIỆU CHUNG
+
 Từ tháng 3 năm 2015, lớp học đặc biệt Akari đã tổ chức mô hình can thiệp sớm dành cho trẻ có nhu cầu đặc biệt. Đến tháng 6 năm 2015 đã tổ chức mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho nhóm trẻ có nhu cầu đặc biệt trên 7 tuổi ít có khả năng và cơ hội học hòa nhập.
 
 Chúng tôi cho rằng một lớp học linh hoạt, phù hợp với khả năng của từng cá nhân trẻ sẽ giúp trẻ phát huy tối đa tiềm năng học tập, học hỏi những kỹ năng mà các trẻ bình thường khác học được và có thể độc lập hết mức có thể trong khả năng của trẻ.
 
 Chúng tôi cho rằng một lớp học tốt phụ thuộc rất nhiều vào việc chia sẻ trách nhiệm và phối hợp chặt chẽ giữa các thành phần tham gia, đòi hỏi nỗ lực của tất các các thành viên từ ban quản lý lớp, các giáo viên, quý vị phụ huynh, các em học sinh và các lực lượng trợ giúp…
 
-Để có thể làm được điều này, cần có sự thống nhất trong cách hiểu thế nào là giáo dục cho trẻ có  nhu cầu đặc biệt? một môi trường tốt cho trẻ cần phải như thế nào? Mỗi thành viên cần phải có vai trò gì? Làm thế nào để trẻ trở thành một thành viên trong cộng đồng? … Vì vậy, chúng tôi xây dựng và phát triển chương trình học dựa trên cơ sở sự tham gia của tất cả các thành viên lớp học
+Để có thể làm được điều này, cần có sự thống nhất trong cách hiểu thế nào là giáo dục cho trẻ có nhu cầu đặc biệt? một môi trường tốt cho trẻ cần phải như thế nào? Mỗi thành viên cần phải có vai trò gì? Làm thế nào để trẻ trở thành một thành viên trong cộng đồng? … Vì vậy, chúng tôi xây dựng và phát triển chương trình học dựa trên cơ sở sự tham gia của tất cả các thành viên lớp học
 Chúng tôi hiểu rằng vẫn còn nhiều người, nhiều cha mẹ còn đang do dự, hoài nghi về khả năng học tập của các trẻ có nhu cầu đặc biệt. Với những kiến thức được đào tạo bài bản và những kinh nghiệm lâu năm làm việc cùng trẻ, chúng tôi tin tưởng các em luôn có khả năng học tập và có thể tiến bộ rất nhiều nếu nhận được sự hỗ trợ phù hợp. Giáo dục và hướng nghiệp là những bước quan trọng để giúp các trẻ hướng tới một cuộc sống độc lập, phát huy tối đa tiềm năng và trở thành thành viên bình đẳng trong cộng đồng.
 
 Hòa theo xu hướng giáo dục của thế kỷ 21 mà Unesco đề ra “HỌC ĐỂ BIẾT. HỌC ĐỂ LÀM. HỌC ĐỂ LÀM NGƯỜI. HỌC ĐỂ CÙNG CHUNG SỐNG”, lớp học Akari hướng đến mục tiêu: Xây dựng một cộng đồng mà mỗi thành viên phải nhạn ra rằng mỗi chúng ta, kể cả trẻ có nhu cầu đặc biệt đều có khả năng, năng lực để học và tham gia vào cuộc sống xã hội. Từ đó, cùng xây dựng mô hình lớp học linh hoạt trong đó tất cả trẻ em có thể tham gia và học tập theo đúng khả năng của chính mình.
@@ -19,25 +21,29 @@ Hòa theo xu hướng giáo dục của thế kỷ 21 mà Unesco đề ra “H�
 Chúng tôi dựa trên cơ sở thống nhất giữa các thành phần tham gia để thiết lập một môi trường học tập tốt không những cho học sinh mà còn cho tập thể giáo viên và cả gia đình của trẻ. Môi trường học tập hỗ trợ cho các thành viên sau:
 
 ### Học sinh
-* Mỗi học sinh sẽ nhận được sự hỗ trợ cá nhân theo khả năng của bản than 
-* Môi trường học tập có tính kích thích giúp làm tăng khả năng tự quyết định và chủ động trong việc học tập của mỗi cá nhân 
-* Mỗi học sinh được hỗ trợ khả năng giao tiếp bằng cách sự dụng các phương tiện giao tiếp hỗ trợ và thay thế 
-* Học sinh học cách hợp tác với nhau 
+
+- Mỗi học sinh sẽ nhận được sự hỗ trợ cá nhân theo khả năng của bản than
+- Môi trường học tập có tính kích thích giúp làm tăng khả năng tự quyết định và chủ động trong việc học tập của mỗi cá nhân
+- Mỗi học sinh được hỗ trợ khả năng giao tiếp bằng cách sự dụng các phương tiện giao tiếp hỗ trợ và thay thế
+- Học sinh học cách hợp tác với nhau
 
 ### Giáo viên
-* Giáo viên biết tôn trọng nhau không kể đến khả năng và vai trò của mỗi người trong các hoạt động của lớp học 
-* Tạo ra tập thể giáo viên, nhân viên đoàn kết, hỗ trợ lẫn nhau
-* Giáo viên đảm nhận trách nhiệm lập kế hoạch cá nhân và tiến hành các hoạt động giảng dạy 
-* Giáo viên, nhân viên phát triển các nguồn lực hỗ trợ học tập, hỗ trợ đồng nghiệp  
+
+- Giáo viên biết tôn trọng nhau không kể đến khả năng và vai trò của mỗi người trong các hoạt động của lớp học
+- Tạo ra tập thể giáo viên, nhân viên đoàn kết, hỗ trợ lẫn nhau
+- Giáo viên đảm nhận trách nhiệm lập kế hoạch cá nhân và tiến hành các hoạt động giảng dạy
+- Giáo viên, nhân viên phát triển các nguồn lực hỗ trợ học tập, hỗ trợ đồng nghiệp
 
 ### Toàn lớp học
-* Ban quản lý lớp học và tập thể giáo viên cùng nhau lập kế hoạch hoạt động cho năm học. 
-* Các thành viên cùng tham gia kiểm tra, đánh giá và phát triển them chương trình lớp học 
-* Nhóm hỗ trợ chuyên môn thường xuyên kết nối, trao đổi và chia sẻ kinh nghiệm với giáo viên và nhân viên 
+
+- Ban quản lý lớp học và tập thể giáo viên cùng nhau lập kế hoạch hoạt động cho năm học.
+- Các thành viên cùng tham gia kiểm tra, đánh giá và phát triển them chương trình lớp học
+- Nhóm hỗ trợ chuyên môn thường xuyên kết nối, trao đổi và chia sẻ kinh nghiệm với giáo viên và nhân viên
 
 ### Phụ huynh
-* Phối hợp chặt chẽ với giáo viên để xây dựng các chương trình giáo dục và hướng nghiệp cho trẻ tại lớp học và tại nhà. 
-* Tham dự các buổi họp phụ huynh, các sinh hoạt ngoại khóa, các hoạt động phát triển chuyên môn để nâng cao kiến thức, kỹ năng trong các hoạt động can thiệp cho con.
+
+- Phối hợp chặt chẽ với giáo viên để xây dựng các chương trình giáo dục và hướng nghiệp cho trẻ tại lớp học và tại nhà.
+- Tham dự các buổi họp phụ huynh, các sinh hoạt ngoại khóa, các hoạt động phát triển chuyên môn để nâng cao kiến thức, kỹ năng trong các hoạt động can thiệp cho con.
 
 ## GIỚI THIỆU VỀ NHÓM LỚP GDĐB VÀ HƯỚNG NGHIỆP BÁN TRÚ
 
@@ -45,23 +51,23 @@ Lớp học được dành cho những trẻ em mắc những dạng KT khác nh
 trí tuệ, tự kỷ, HC Down, bại não, đa tật, … theo hình thức bán trú. Các
 hoạt động học tập bao gồm: vòng tròn giao tiếp, kỹ năng sống, hoạt động
 tự do, toán và đọc viết ứng dụng, mỹ thuật, âm nhạc, thể chất, … nhằm
-mục đích phát triển các kỹ năng cơ bản sau: 
+mục đích phát triển các kỹ năng cơ bản sau:
 
-  - Các kỹ năng trong đời sống sinh hoạt thường ngày
-  - Các kỹ năng xã hội 
-  - Các kỹ năng giao tiếp và ngôn ngữ
-  - Khả năng tư duy và kiến thức 
-  - Vận động và cảm nhận
-  - Hướng nghiệp và tạo việc làm 
-  - …
+- Các kỹ năng trong đời sống sinh hoạt thường ngày
+- Các kỹ năng xã hội
+- Các kỹ năng giao tiếp và ngôn ngữ
+- Khả năng tư duy và kiến thức
+- Vận động và cảm nhận
+- Hướng nghiệp và tạo việc làm
+- …
 
 Sự phát triển của những kỹ năng này có vai trò quan trọng với mỗi cá
 nhân trẻ vì chúng là tiền đề cho việc học và giúp trẻ có thể tự quyết
-định tham gia trong sinh hoạt hang ngày. 
+định tham gia trong sinh hoạt hang ngày.
 
 Lớp học thực hiện chương trình giáo dục bán trú với một ngày học bắt đầu
 từ 7g30 sáng và kết thúc vào lúc 5g30 chiều. Học sinh được phụ vụ ăn
-trưa, ăn chiều và nghỉ trưa với những điều kiện thuận tiện nhất. 
+trưa, ăn chiều và nghỉ trưa với những điều kiện thuận tiện nhất.
 
 Các hoạt động và mục tiêu của nhóm lớp lớn được xây dựng trên cơ sở tham
 khảo các chương trình giáo dục phổ thông và giáo dục chuyên biệt. Các
@@ -72,9 +78,9 @@ một số kỹ năng sống cần thiết. Các chương trình giáo dục chu
 Steps.v.v…) Dựa trên các chương trình này, giáo viên xây dựng các mục
 tiêu can thiệp cá nhân để tổ chức các hoạt động học trên lớp, hỗ trợ
 cho trẻ ngoài giờ học chung giúp trẻ phát triển các kỹ năng cần thiết
-phù hợp với khả năng riêng của trẻ. 
+phù hợp với khả năng riêng của trẻ.
 
-## CÁC HOẠT ĐỘNG HỌC TẬP CỦA LỚP CHÚNG TÔI 
+## CÁC HOẠT ĐỘNG HỌC TẬP CỦA LỚP CHÚNG TÔI
 
 <table class="ba collapse">
 <thead>
@@ -154,30 +160,22 @@ phù hợp với khả năng riêng của trẻ.
 </tbody>
 </table>
 
-## CÁC HOẠT ĐỘNG HỖ TRỢ ĐỘI NGŨ GIÁO VIÊN VÀ TÌNH NGUYỆN VIÊN 
+## CÁC HOẠT ĐỘNG HỖ TRỢ ĐỘI NGŨ GIÁO VIÊN VÀ TÌNH NGUYỆN VIÊN
 
 ### Tập huấn và chia sẻ chuyên môn với phụ huynh và đồng nghiệp
 
 Chúng tôi tổ chức các khóa tập huấn, các buổi gặp mặt và chia sẻ kinh
 nghiệm thường xuyên trong tất cả các tháng làm việc. Chúng tôi có được
 sự hỗ trợ và chia sẻ từ nhiều nhà chuyên môn trong và ngoài nước về
-các chủ đề sau: 
+các chủ đề sau:
 
-  - Hướng dẫn thực hành can thiệp sớm cho cha mẹ và giáo viên 
-  - Hướng dẫn các hoạt động phát triển giao tiếp và ngôn ngữ
-  - Hướng dẫn các hoạt động phát triển kỹ năng vận động tinh 
-  - Hướng dẫn các hoạt động phát triển toán và đọc viết ứng dụng
-  - Quản lý hành vi 
-  - … 
+- Hướng dẫn thực hành can thiệp sớm cho cha mẹ và giáo viên
+- Hướng dẫn các hoạt động phát triển giao tiếp và ngôn ngữ
+- Hướng dẫn các hoạt động phát triển kỹ năng vận động tinh
+- Hướng dẫn các hoạt động phát triển toán và đọc viết ứng dụng
+- Quản lý hành vi
+- …
 
 ### Đồng nghiệp tư vấn cho nhau
 
-Đối với chúng tôi, dạy học là một công việc nghiêm túc và khoa học. Tất
-cả chúng tôi đều cố gắng tìm ra những cách hỗ trợ tốt nhất cho học sinh
-của mình. Mỗi học sinh có những nhu cầu và kho skhawn khác nhau nên
-không thể dạy theo một phương pháp cố định nào mà phải phát triển các
-phương pháp thích hợp, linh động. Chúng tôi chia sẻ về các trường hợp,
-các vấn đề cần được giải quyết và được thảo luận bởi tất cả các thành
-viên trong lớp học. Với cách này, chúng tôi phát triển nhiều giải pháp
-khác nhau từ nhiều cách nhìn nhận vấn đề khác nhau, đồng thời nâng cao
-chuyên môn cho mỗi thành viên.
+Đối với chúng tôi, dạy học là một công việc nghiêm túc và khoa học. Tất cả chúng tôi đều cố gắng tìm ra những cách hỗ trợ tốt nhất cho học sinh của mình. Mỗi học sinh có những nhu cầu và kho skhawn khác nhau nên không thể dạy theo một phương pháp cố định nào mà phải phát triển các phương pháp thích hợp, linh động. Chúng tôi chia sẻ về các trường hợp, các vấn đề cần được giải quyết và được thảo luận bởi tất cả các thành viên trong lớp học. Với cách này, chúng tôi phát triển nhiều giải pháp khác nhau từ nhiều cách nhìn nhận vấn đề khác nhau, đồng thời nâng cao chuyên môn cho mỗi thành viên.
