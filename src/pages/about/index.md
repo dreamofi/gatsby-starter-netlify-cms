@@ -2,7 +2,6 @@
 templateKey: about-page
 title: About our values
 ---
-
 ![Test image](/img/blog-index.jpg 'Grown')
 
 ## GIỚI THIỆU CHUNG

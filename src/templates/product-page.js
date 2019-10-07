@@ -6,6 +6,7 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+import Content, {HTMLContent} from '../components/Content';
 
 export const ProductPageTemplate = ({
   image,
@@ -139,8 +140,28 @@ ProductPageTemplate.propTypes = {
   }),
 };
 
+export const MarkdownTemplate = ({content, contentComponent}) => {
+  const PageContent = contentComponent || Content;
+
+  return (
+    <section className="bg-light-gray helvetica">
+      <div className="w-90 w-80-l center pv3 pv4-l">
+        <div className="pa2 pa4-l">
+          <PageContent className="content" content={content} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+MarkdownTemplate.propTypes = {
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+};
+
 const ProductPage = ({data}) => {
   const {frontmatter} = data.markdownRemark;
+  const {markdownRemark: post} = data;
 
   return (
     <Layout>
@@ -155,6 +176,7 @@ const ProductPage = ({data}) => {
         fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
+      <MarkdownTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
   );
 };
@@ -172,6 +194,7 @@ export default ProductPage;
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: {eq: $id}) {
+      html
       frontmatter {
         title
         image {
