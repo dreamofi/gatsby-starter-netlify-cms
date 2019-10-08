@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import {graphql} from 'gatsby';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
-import Testimonials from '../components/Testimonials';
-import Pricing from '../components/Pricing';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import Content, {HTMLContent} from '../components/Content';
 
@@ -15,9 +13,6 @@ export const ProductPageTemplate = ({
   description,
   intro,
   main,
-  testimonials,
-  fullImage,
-  pricing,
 }) => (
   <div className="mt0 helvetica">
     <div
@@ -88,27 +83,7 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </div>
-
-              <Testimonials testimonials={testimonials} />
             </div>
-          </div>
-
-          <div
-            className="h5"
-            style={{
-              backgroundImage: `url(${
-                fullImage.childImageSharp
-                  ? fullImage.childImageSharp.fluid.src
-                  : fullImage
-              })`,
-              backgroundPosition: `center`,
-              backgroundRepeat: `no-repeat`,
-            }}
-          />
-          <div className="w-90 w-80-m w-70-l center pv3 pv4-l">
-            <h2 className="f4 f3-l b">{pricing.heading}</h2>
-            <p className="is-size-5">{pricing.description}</p>
-            <Pricing data={pricing.plans} />
           </div>
         </div>
       </div>
@@ -130,13 +105,6 @@ ProductPageTemplate.propTypes = {
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
   }),
 };
 
@@ -172,9 +140,6 @@ const ProductPage = ({data}) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
       />
       <MarkdownTemplate contentComponent={HTMLContent} content={post.html} />
     </Layout>
@@ -253,27 +218,6 @@ export const productPageQuery = graphql`
                 }
               }
             }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
       }
