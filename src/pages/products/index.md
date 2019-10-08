@@ -58,3 +58,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+

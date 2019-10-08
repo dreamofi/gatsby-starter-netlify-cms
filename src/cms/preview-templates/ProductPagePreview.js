@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {ProductPageTemplate} from '../../templates/product-page';
 import {MarkdownTemplate} from '../../templates/product-page';
 
-const ProductPagePreview = ({entry, getAsset, widgetFor}) => {
+const ProductPagePreview = ({entry, widgetFor}) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs']);
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : [];
 
@@ -44,7 +44,6 @@ ProductPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
-  getAsset: PropTypes.func,
   widgetFor: PropTypes.func,
 };
 

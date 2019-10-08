@@ -42,10 +42,7 @@ export const ProductPageTemplate = ({
       <div className="">
         <div className="">
           <div className="">
-            <div className="w-90 w-80-m w-70-l center pv3 pv4-l">
-              <h3 className="b f4 f3">{heading}</h3>
-              <p>{description}</p>
-            </div>
+            <div className="w-90 w-80-m w-70-l center pv3 pv4-l"></div>
           </div>
 
           <Features gridItems={intro.blurbs} />
@@ -55,32 +52,29 @@ export const ProductPageTemplate = ({
               <div className="">
                 <div className="">
                   <h3 className="f4 f3-l b">{main.heading}</h3>
-
                   <p>{main.description}</p>
                 </div>
               </div>
 
               <div className="">
-                <div className="">
-                  <div className="flex flex-wrap">
-                    <div className="w-100 w-50-l pa3">
-                      <article className="">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-
-                    <div className="w-100 w-50-l pa3">
-                      <article className="">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-
-                  <div className="w-100 pa3">
+                <div className="flex flex-wrap">
+                  <div className="w-100 w-50-l pa3">
                     <article className="">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
+                      <PreviewCompatibleImage imageInfo={main.image1} />
                     </article>
                   </div>
+
+                  <div className="w-100 w-50-l pa3">
+                    <article className="">
+                      <PreviewCompatibleImage imageInfo={main.image2} />
+                    </article>
+                  </div>
+                </div>
+
+                <div className="w-100 pa3">
+                  <article className="">
+                    <PreviewCompatibleImage imageInfo={main.image3} />
+                  </article>
                 </div>
               </div>
             </div>
