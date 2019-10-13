@@ -69,8 +69,8 @@ main:
     alt: Khai giảng 2019
     image: /img/ximg_1255_2.jpg
   image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+    alt: Học sinh múa hát trong ngày khai giảng 2019
+    image: /img/ximg_1148_2.jpg
 ---
 ## Can thiệp sớm/can thiệp cá nhân
 
