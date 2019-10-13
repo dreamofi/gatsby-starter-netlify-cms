@@ -2,7 +2,9 @@
 templateKey: product-page
 title: Dịch vụ của chúng tôi
 image: /img/ximg_1619_2.jpg
-heading: Great coffee with a conscience
+heading: >-
+  Mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho trẻ có nhu cầu đặc
+  biệt
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -42,25 +44,30 @@ intro:
       text:
         - Hoạt động tư vấn 1 – 1
         - Hoạt động tư vấn nhóm
-  heading: What we offer
+  heading: Dịch vụ của chúng tôi
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: >-
+    Mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho trẻ có nhu cầu đặc
+    biệt
+  description: >-
+    Chúng tôi hiểu rằng vẫn còn nhiều người, nhiều cha mẹ còn đang do dự, hoài
+    nghi về khả năng học tập của các trẻ có nhu cầu đặc biệt. Với những kiến
+    thức được đào tạo bài bản và những kinh nghiệm lâu năm làm việc cùng trẻ,
+    chúng tôi tin tưởng các em luôn có khả năng học tập và có thể tiến bộ rất
+    nhiều nếu nhận được sự hỗ trợ phù hợp. Giáo dục và hướng nghiệp là những
+    bước quan trọng để giúp các trẻ hướng tới một cuộc sống độc lập, phát huy
+    tối đa tiềm năng và trở thành thành viên bình đẳng trong cộng đồng. 
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    alt: Các em học sinh trong hoạt động hội chợ
+    image: /img/Gal_6.jpg
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    alt: Khai giảng 2019
+    image: /img/ximg_1255_2.jpg
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
