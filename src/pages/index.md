@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: /img/home-jumbotron.jpg
+image: /img/headbanner.jpg
 title: TRUNG TÂM AKARI
 subheading: Luôn đồng hành cùng mỗi bước con đi
 mainpitch:
