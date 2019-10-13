@@ -44,8 +44,12 @@ intro:
     - image: /img/undraw_teacher_35j2.svg
       heading: 'Tư vấn, tham vấn'
       text:
-        - Hoạt động tư vấn 1 – 1
-        - Hoạt động tư vấn nhóm
+        - >-
+          Hoạt động tư vấn 1 – 1 (giữa cán bộ tư vấn của trung tâm với gia đình
+          trẻ)
+        - >-
+          Hoạt động tư vấn nhóm (giữa cán bộ tư vấn của trung tâm với các gia
+          đình trẻ có cùng mối quan tâm và vấn đề cần giải quyết)
   heading: Dịch vụ của chúng tôi
   description: >
     Chúng tôi dựa trên cơ sở thống nhất giữa các thành phần tham gia để thiết
