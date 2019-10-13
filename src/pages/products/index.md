@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 title: Dịch vụ của chúng tôi
-image: /img/ximg_1619_2.jpg
+image: /img/XIMG_1489.jpg
 heading: >-
   Mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho trẻ có nhu cầu đặc
   biệt
@@ -14,7 +14,7 @@ description: >-
   cả trẻ em có thể tham gia và học tập theo đúng khả năng của chính mình.
 intro:
   blurbs:
-    - image: /img/undraw_back_to_school_inwc.svg
+    - image: /img/undraw_back_to_school_inwc.png
       heading: 'Can thiệp sớm, Can thiệp cá nhân'
       text:
         - Mô hình giáo dục 1 – 1
@@ -22,7 +22,7 @@ intro:
         - >-
           Đối tượng can thiệp: Trẻ em có nhu cầu đặc biệt trước tuối học (12
           tháng – 6 tuổi) và bậc tiểu học
-    - image: /img/undraw_gifts_btw0.svg
+    - image: /img/undraw_gifts_btw0.png
       heading: 'Kỹ năng sống, hướng nghiệp'
       text:
         - Dành cho những trẻ em mắc những dạng khuyết tật khác nhau
@@ -33,7 +33,7 @@ intro:
         - >-
           Các hoạt động và mục tiêu của nhóm lớp lớn được xây dựng trên cơ sở
           các chương trình giáo dục phổ thông và chuyên biệt
-    - image: /img/undraw_medicine_b1ol.svg
+    - image: /img/undraw_medicine_b1ol.png
       heading: 'Chẩn đoán, đánh giá'
       text:
         - Xác định dạng khuyết tật
@@ -41,7 +41,7 @@ intro:
         - >-
           Định hướng can thiệp – giáo dục phù hợp với mức độ chức năng hiện tại
           của trẻ
-    - image: /img/undraw_teacher_35j2.svg
+    - image: /img/undraw_teacher_35j2.png
       heading: 'Tư vấn, tham vấn'
       text:
         - >-

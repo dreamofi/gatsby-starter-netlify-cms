@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import useSiteMetadata from './SiteMetadata';
 import {withPrefix} from 'gatsby';
+import GForm from '../components/gform';
 
 const TemplateWrapper = ({children}) => {
   const {title, description} = useSiteMetadata();
@@ -49,6 +50,8 @@ const TemplateWrapper = ({children}) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+
+      <GForm />
       <Footer />
     </div>
   );

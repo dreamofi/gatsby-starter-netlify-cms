@@ -2,9 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import logoAkari from '../img/logoAkari.svg';
 import facebook from '../img/social/facebook.svg';
-import phone from '../img/social/phone.svg';
 import map from '../img/map.jpg';
-import home from '../img/social/home.svg';
 import email from '../img/social/email.svg';
 import 'tachyons';
 
@@ -58,6 +56,7 @@ const Footer = class extends React.Component {
                     title="facebook"
                     href="https://facebook.com/classroom.akari"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="dib v-mid link near-white hover-orange">
                     <img
                       src={facebook}
@@ -99,6 +98,7 @@ const Footer = class extends React.Component {
             <div>
               <a
                 href="https://www.openstreetmap.org/#map=19/21.05935/105.80739&layers=N"
+                rel="noopener noreferrer"
                 target="_blank">
                 <img src={map} alt="map" />
               </a>

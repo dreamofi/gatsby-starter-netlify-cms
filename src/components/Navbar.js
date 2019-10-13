@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import github from '../img/github-icon.svg';
 import logoAkariHorizontal from '../img/logoAkariHorizontal.svg';
 import burgerIcon from '../img/burger.svg';
 import 'tachyons';

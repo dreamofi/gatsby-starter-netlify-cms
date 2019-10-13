@@ -6,7 +6,6 @@ import {graphql, Link} from 'gatsby';
 import Layout from '../components/Layout';
 import Content, {HTMLContent} from '../components/Content';
 import 'tachyons';
-import blockquoteStyle from '../components/blog-post.module.scss';
 import SimilarPosts from '../components/related-post.js';
 
 //Create template for the blog page
@@ -85,6 +84,20 @@ const BlogPost = ({data}) => {
         title={post.frontmatter.title}
       />
       <SimilarPosts curId={curId} curTag={curTag} />
+      <div
+        className="white"
+        style={{
+          backgroundSize: `120px 1200px`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 200' style='enable-background:new 0 0 20 800;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .kf%7Bfill:%23FF6300;%7D %3C/style%3E %3Ctitle%3Ekoro-basic-fog-0%3C/title%3E %3Cpath class='kf' d='M0,800h800'/%3E %3Cpath class='kf' d='M0,800h20V0c-4.9,0-5,2.6-9.9,2.6S5,0,0,0V800z'/%3E %3C/svg%3E ")`,
+          backgroundPosition: `top`,
+          backgroundRepeat: `repeat-x`,
+          height: `20px`,
+          width: `100%`,
+          left: `0`,
+          right: `0`,
+          zIndex: `9`,
+          marginTop: `auto`,
+        }}></div>
     </Layout>
   );
 };

@@ -14,7 +14,7 @@ const FeatureGrid = ({gridItems}) => {
             className="flex flex-wrap w-80-m w-50-l pa3 shadow-hover">
             <section className="w-100 ba br3 b--moon-gray">
               <div
-                className={`bg-${colorList[index]} pv1 bt b--${colorList[index]} br3 br--top`}>
+                className={`bg-${colorList[index]} pa1 bt b--${colorList[index]} br3 br--top`}>
                 <h2 className="tc white f5 f4-l">{item.heading}</h2>
               </div>
 

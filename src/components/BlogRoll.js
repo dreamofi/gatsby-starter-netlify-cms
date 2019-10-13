@@ -12,9 +12,10 @@ class BlogRoll extends React.Component {
       <div className="flex flex-wrap helvetica mid-gray pt2">
         {posts &&
           posts.map(({node: post}) => (
-            <div
-              className="flex flex-wrap w-50-m w-third-l pa2 pa3-ns items-stretch justify-center grow"
-              key={post.id}>
+            <Link
+              className="flex flex-wrap w-50-m w-third-l pa2 pa3-ns items-stretch justify-center no-underline black grow"
+              key={post.id}
+              to={post.fields.slug}>
               <article
                 className={`flex flex-wrap pa3 ba br3 b--moon-gray items-stretch justify-center ${
                   post.frontmatter.featuredpost
@@ -48,13 +49,11 @@ class BlogRoll extends React.Component {
                   <br />
                   <br />
                 </p>
-                <Link
-                  className="db dim link dark-green b self-end"
-                  to={post.fields.slug}>
+                <div className="db dim link dark-green b self-end">
                   Xem chi tiết →
-                </Link>
+                </div>
               </article>
-            </div>
+            </Link>
           ))}
       </div>
     );
