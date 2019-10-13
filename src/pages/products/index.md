@@ -6,10 +6,12 @@ heading: >-
   Mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho trẻ có nhu cầu đặc
   biệt
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Dựa trên xu hướng giáo dục của thế kỷ 21 mà UNESCO đề ra “HỌC ĐỂ BIẾT. HỌC ĐỂ
+  LÀM. HỌC ĐỂ LÀM NGƯỜI. HỌC ĐỂ CÙNG CHUNG SỐNG”, Trung tâm Akari hướng đến mục
+  tiêu: Xây dựng một cộng đồng mà mỗi thành viên nhận ra rằng mỗi chúng ta, kể
+  cả trẻ có nhu cầu đặc biệt đều có khả năng, năng lực để học và tham gia vào
+  cuộc sống xã hội. Từ đó, cùng xây dựng mô hình lớp học linh hoạt trong đó tất
+  cả trẻ em có thể tham gia và học tập theo đúng khả năng của chính mình.
 intro:
   blurbs:
     - image: /img/undraw_back_to_school_inwc.svg
@@ -46,10 +48,9 @@ intro:
         - Hoạt động tư vấn nhóm
   heading: Dịch vụ của chúng tôi
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    Chúng tôi dựa trên cơ sở thống nhất giữa các thành phần tham gia để thiết
+    lập một môi trường học tập tốt không những cho học sinh mà còn cho tập thể
+    giáo viên và cho gia đình của trẻ.
 main:
   heading: >-
     Mô hình can thiệp giáo dục đặc biệt và hướng nghiệp cho trẻ có nhu cầu đặc
@@ -72,6 +73,10 @@ main:
     alt: Học sinh múa hát trong ngày khai giảng 2019
     image: /img/ximg_1148_2.jpg
 ---
+# Quy trình cung cấp dịch vụ tại Trung tâm Akari
+
+![Quy trình AKARI](/img/quy-trình-akari_1_web.jpg "Quy trình AKARI")
+
 ## Can thiệp sớm/can thiệp cá nhân
 
 Can thiệp sớm/can thiệp cá nhân là mô hình giáo dục 1 – 1 (1 giáo viên
