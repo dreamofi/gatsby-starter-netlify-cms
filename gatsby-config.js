@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Trung tâm Giáo dục kỹ năng cho trẻ có nhu cầu đặc biệt Akari',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Trung tâm Giáo dục kỹ năng cho trẻ có nhu cầu đặc biệt Akari (gọi tắt là Trung tâm Akari) ra đời từ tháng 3 năm 2015 với mô hình can thiệp sớm dành cho các trẻ em mắc hội chứng tự kỷ, chậm phát triển, tăng động giảm tập trung, rối loạn phát triển... Đến tháng 6 năm 2015, Trung tâm Akari tiếp tục tổ chức mô hình can thiệp giáo dục đặc biệt và hướng nghiệp hướng đến nhóm trẻ có nhu cầu đặc biệt tử 6 tuổi trở lên ít có khả năng và cơ hội học hòa nhập.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
