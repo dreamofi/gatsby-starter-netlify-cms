@@ -66,8 +66,8 @@ main:
     alt: Các em học sinh trong hoạt động hội chợ
     image: /img/Gal_6.jpg
   image2:
-    alt: Khai giảng 2019
-    image: /img/ximg_1255_2.jpg
+    alt: Các em học sinh trong hoạt động hội chợ 2
+    image: /img/Gal_5.jpg
   image3:
     alt: Học sinh múa hát trong ngày khai giảng 2019
     image: /img/ximg_1148_2.jpg
