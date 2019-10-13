@@ -10,7 +10,7 @@ description: >-
   anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/undraw_back_to_school_inwc.svg
       heading: 'Can thiệp sớm, Can thiệp cá nhân'
       text:
         - Mô hình giáo dục 1 – 1
@@ -18,7 +18,7 @@ intro:
         - >-
           Đối tượng can thiệp: Trẻ em có nhu cầu đặc biệt trước tuối học (12
           tháng – 6 tuổi) và bậc tiểu học
-    - image: /img/coffee-gear.png
+    - image: /img/undraw_gifts_btw0.svg
       heading: 'Kỹ năng sống, hướng nghiệp'
       text:
         - Dành cho những trẻ em mắc những dạng khuyết tật khác nhau
@@ -29,7 +29,7 @@ intro:
         - >-
           Các hoạt động và mục tiêu của nhóm lớp lớn được xây dựng trên cơ sở
           các chương trình giáo dục phổ thông và chuyên biệt
-    - image: /img/tutorials.png
+    - image: /img/undraw_medicine_b1ol.svg
       heading: 'Chẩn đoán, đánh giá'
       text:
         - Xác định dạng khuyết tật
@@ -37,7 +37,7 @@ intro:
         - >-
           Định hướng can thiệp – giáo dục phù hợp với mức độ chức năng hiện tại
           của trẻ
-    - image: /img/meeting-space.png
+    - image: /img/undraw_teacher_35j2.svg
       heading: 'Tư vấn, tham vấn'
       text:
         - Hoạt động tư vấn 1 – 1
