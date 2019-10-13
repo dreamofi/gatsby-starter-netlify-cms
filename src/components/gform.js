@@ -14,8 +14,7 @@ const GForm = () => {
 
         <div className="flex flex-wrap flex-row-reverse-l pv2 pv3-l white">
           <div className="w-100 w-30-l f4 f3-l pa2 pa3-l tc tl-l">
-            <h4>Chúng tôi luôn đảm bảo mọi dịch vụ</h4>
-            <p>Đừng ngần ngại liên hệ với chúng tôi</p>
+            <h4>Đừng ngần ngại liên hệ với chúng tôi</h4>
           </div>
 
           <div className="w-100 w-70-l pa3">
@@ -99,6 +98,16 @@ const GForm = () => {
                           value="Đặt lịch đánh giá"
                           onClick={() => toggleState('db')}>
                           Đặt lịch đánh giá
+                        </option>
+                        <option
+                          value="Đặt lịch đánh giá"
+                          onClick={() => toggleState('db')}>
+                          Đặt lịch tham quan trung tâm
+                        </option>
+                        <option
+                          value="Đặt lịch đánh giá"
+                          onClick={() => toggleState('db')}>
+                          Đặt lịch tư vấn
                         </option>
                         <option
                           value="Nội dung khác"
