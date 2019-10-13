@@ -13,27 +13,35 @@ intro:
     - image: /img/coffee.png
       heading: 'Can thiệp sớm, Can thiệp cá nhân'
       text:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans
+        - Mô hình giáo dục 1 – 1
+        - 'Thời lượng can thiệp: 1h30’ ngắn nhưng hiệu quả cao'
+        - >-
+          Đối tượng can thiệp: Trẻ em có nhu cầu đặc biệt trước tuối học (12
+          tháng – 6 tuổi) và bậc tiểu học
     - image: /img/coffee-gear.png
       heading: 'Kỹ năng sống, hướng nghiệp'
       text:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans
+        - Dành cho những trẻ em mắc những dạng khuyết tật khác nhau
+        - Phát triển các kỹ năng sinh hoạt và hướng nghiệp cơ bản
+        - >-
+          Lớp học thực hiện chương trình giáo dục bán trú với một ngày học bắt
+          đầu từ 7h30 sáng và kết thúc vào lúc 5h30 chiều
+        - >-
+          Các hoạt động và mục tiêu của nhóm lớp lớn được xây dựng trên cơ sở
+          các chương trình giáo dục phổ thông và chuyên biệt
     - image: /img/tutorials.png
       heading: 'Chẩn đoán, đánh giá'
       text:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans
+        - Xác định dạng khuyết tật
+        - Xác định tuổi phát triển ở các lĩnh vực
+        - >-
+          Định hướng can thiệp – giáo dục phù hợp với mức độ chức năng hiện tại
+          của trẻ
     - image: /img/meeting-space.png
       heading: 'Tư vấn, tham vấn'
       text:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans
+        - Hoạt động tư vấn 1 – 1
+        - Hoạt động tư vấn nhóm
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
